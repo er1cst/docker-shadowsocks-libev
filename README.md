@@ -2,7 +2,7 @@
 
 A Docker image that contains shadowsocks-libev service.
 
-The image is pretty small(~12MB) because it uses Alpine the base image.
+The image is pretty small(~12MB) because it uses Alpine as the base image.
 
 ## How to build the image
 
@@ -17,7 +17,7 @@ docker build \
 
 ## how to use this image
 
-Because 8388 is the port that the container exposes, when you publish the shadowsocks service, you should publish port 8388 using `-p` parameter in `docker run`.
+Because 8388 is the port that the container exposes, when you start shadowsocks-libev, you should publish port 8388 using `-p` parameter in `docker run` . You should also specify port number in `ss-server`.
 
 Then run the follwing command, which creates an instance of shadowsocks-libev server.
 
